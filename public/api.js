@@ -8,12 +8,12 @@ const API = {
     }
     const json = await res.json();
 
-    return json[json.length - 1];
+    return json[json.length - 1];//Looks for ID of last workout based on array length? Maybe?
   },
   async addExercise(data) {
-    const id = location.search.split("=")[1];
+    const id = location.search.split("=")[1]; //What is location? I think this is somehow looking for the last workout id so this exercise can be added to it.
 
-    const res = await fetch("/api/workouts/" + id, {
+    const res = await fetch("/api/workouts/" + id, { //How to get this ID into the router? We've typically used workouts/:id, then assigned the const beneath
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
@@ -34,7 +34,7 @@ const API = {
 
     return json;
   },
-
+//What is this?
   async getWorkoutsInRange() {
     const res = await fetch(`/api/workouts/range`);
     const json = await res.json();
