@@ -1,8 +1,6 @@
-//Routes work, but multiple workouts on one day lead to the dashboard showing the same day multiple times; once for each workout. Is this the expected behavior?
 const router = require('express').Router();
 const Workout = require('../models/workout.js'); 
 
-//WORKS
 router.get('/api/workouts', (req, res) => {
   Workout.aggregate([
     {
@@ -21,7 +19,6 @@ router.get('/api/workouts', (req, res) => {
     });
 });
 
-//WORKS
 router.put('/api/workouts/:id', async (req, res) => {
   Workout.findByIdAndUpdate(req.params.id,
     {
@@ -38,7 +35,6 @@ router.put('/api/workouts/:id', async (req, res) => {
     });
 });
 
-//WORKS
 router.post('/api/workouts', async (req, res) => {
   Workout.create(req.body)
     .then(dbWorkout => {
@@ -48,7 +44,6 @@ router.post('/api/workouts', async (req, res) => {
   });
 });
 
-//WORKS
 router.get('/api/workouts/range', async (req, res) => {
   Workout.aggregate([
     {
