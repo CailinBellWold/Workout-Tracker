@@ -34,15 +34,17 @@ This exercise provided opportunities to test my budding skills with Mongo and Mo
 6. The app is built using a MongoDB database.
 7. The app is deployed to Heroku.
 
-## Technologies Used
+## Technologies Used 
 - JavaScript
 - Mongo
 - Mongoose
+- Heroku
+- [MongoDB Atlas] (https://www.mongodb.com/cloud/atlas)
 - [NPM Express.js Package](https://www.npmjs.com/package/express)
 - [NPM Express-Session Package](https://www.npmjs.com/package/express-session)
 - [NPM dotenv Package](https://www.npmjs.com/package/dotenv)
 - [NPM nodemon Package](https://www.npmjs.com/package/nodemon)
-- Heroku
+
 <!-- - Node.js
 
 - [NPM Handlebars.js Package](https://www.npmjs.com/package/handlebars)
@@ -88,6 +90,10 @@ STEP 4
 From the modern browser of your choice, visit:
 
     4.1 http://localhost:3001 -->
+
+## Deployed App
+
+[This Workout Tracker app has been deployed on Heroku and is available here.](https://workout-tracker-cailin.herokuapp.com/)
 
 ## Demo 
 
