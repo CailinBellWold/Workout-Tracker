@@ -11,7 +11,7 @@ const API = {
     return json[json.length - 1];
   },
   async addExercise(data) {
-    const id = location.search.split("=")[1]; //What is location? I think this is somehow looking for the last workout id so this exercise can be added to it.
+    const id = location.search.split("=")[1];
 
     const res = await fetch("/api/workouts/" + id, {
       method: "PUT",
@@ -34,7 +34,7 @@ const API = {
 
     return json;
   },
-//What is this?
+
   async getWorkoutsInRange() {
     const res = await fetch(`/api/workouts/range`);
     const json = await res.json();

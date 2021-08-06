@@ -1,17 +1,6 @@
-//TROUBLESHOOT: Workout Duration not Calculating.
-
+//Routes work, but multiple workouts on one day lead to the dashboard showing the same day multiple times; once for each workout. Is this the expected behavior?
 const router = require('express').Router();
 const Workout = require('../models/workout.js'); 
-
-router.get('/api/workouts', (req, res) => {
-    Workout.find({})
-      .then(workoutData => {
-        res.json(workoutData);
-      })
-      .catch(err => {
-        res.status(400).json(err);
-      });
-  });
 
 //WORKS
 router.get('/api/workouts', (req, res) => {
@@ -57,23 +46,28 @@ router.post('/api/workouts', async (req, res) => {
   }).catch(err => {
     res.status(400).json(err);
   });
-});    
+});
 
-
-// router.delete('/api/workouts', async (req, res) => {
-
-// })
-// .catch(err => {
-//   res.status(400).json(err);
-// });
-
-
-// router.get('/api/workouts/range', async (req, res) => {
-
-// })
-// .catch(err => {
-//   res.status(400).json(err);
-// });
-
+//WORKS
+router.get('/api/workouts/range', async (req, res) => {
+  Workout.aggregate([
+    {
+      $addFields: {
+        totalDuration: {
+          $sum: '$exercises.duration',
+        },
+      },
+    },
+  ])
+    .sort({ day: -1 })
+    .limit(7)
+    .sort({ day: 1 })
+    .then((dbWorkouts) => {
+      res.json(dbWorkouts);
+    })
+    .catch((err) => {
+      res.json(err);
+    });
+});
 
 module.exports = router;
