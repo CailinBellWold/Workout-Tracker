@@ -30,7 +30,8 @@ router.put('/api/workouts/:id', async (req, res) => {
   )
     .then(dbWorkout => {
       res.json(dbWorkout);
-    }).catch(err => {
+    })
+    .catch(err => {
       res.status(400).json(err);
     });
 });
@@ -39,9 +40,10 @@ router.post('/api/workouts', async (req, res) => {
   Workout.create(req.body)
     .then(dbWorkout => {
       res.json(dbWorkout);
-  }).catch(err => {
-    res.status(400).json(err);
-  });
+    })
+    .catch(err => {
+      res.status(400).json(err);
+    });
 });
 
 router.get('/api/workouts/range', async (req, res) => {
@@ -61,7 +63,7 @@ router.get('/api/workouts/range', async (req, res) => {
       res.json(dbWorkouts);
     })
     .catch((err) => {
-      res.json(err);
+      res.status(400).json(err);
     });
 });
 

@@ -1,4 +1,4 @@
-# 18 Nosql: Workout Tracker
+# 18 NoSQL: Workout Tracker
 
 [![License: MIT](https://img.shields.io/github/license/CailinBellWold/Team-Profile-Generator?style=plastic)](https://opensource.org/licenses/MIT)
 
@@ -8,12 +8,10 @@ Create the back-end of a workout tracker using a Mongo database, Mongoose schema
 
 ### Motivation
 
-<!-- * As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
-
-A consumer will reach their fitness goals more quickly when they track their workout progress. -->
+Learn to write CRUD using Mongoose and to deploy Heroku from a new database created in MongoDB Atlas. 
 
 ### Learning Targets
-This exercise provided opportunities to test my budding skills with Mongo and Mongoose, and allowed further opportunities to develop pre-existing skills handling routes with Express.js
+This exercise provided opportunities to test my budding skills with Mongo and Mongoose, and allowed further opportunities to develop pre-existing skills handling routes with Express.js. Also learned to seed a collection in a MongoDB Atlas database.
 
 ## Table of Contents
 - [Core Objectives Met](#Core)
@@ -48,7 +46,7 @@ This exercise provided opportunities to test my budding skills with Mongo and Mo
 
 ## Local Installation & Usage
 
-To use this app, you will need a Mongo account, and to have the app installed on your machine. Documentation with installation instructions are available [here.](https://dev.mysql.com/doc/workbench/en/wb-installing.html) 
+To use this app, you will need a MongoDB account, and to have the app installed on your machine. Documentation with installation instructions are available [here.](https://docs.mongodb.com/manual/installation/) 
 
 STEP 1
 
@@ -56,19 +54,13 @@ STEP 1
 
 STEP 2
 
-From Visual Studio Code or the code editor of your choice:
+From your terminal, run:
 
-    2.1 Open the repo.
-    2.2 Locate and open the .env.EXAMPLE file, located in the root directory.
-    2.3 Add your own MySQL Workbench Username and Password to the env.EXAMPLE file.
-    2.4 Re-name the file to .env (i.e. remove .EXAMPLE).
-    2.5 Save your changes.
-    2.6 Locate and open db\schema.sql.
-    2.7 Copy and paste the database schema into a new MySQL Workbench query tab and run it. Refresh and view your updated schemas to ensure that techblog_db now appears.
+    2.1 mongo
 
 STEP 3
 
-From your terminal, run:
+From a second terminal window, run:
 
     3.1 npm i
     3.2 npm run watch
@@ -85,7 +77,15 @@ From the modern browser of your choice, visit:
 
 ## Demo 
 
-<!-- Link: [Tech-Blog demo](https://drive.google.com/file/d/1HTyx6dRZKhin4lxi1JXKZvK0jWWVaZga/view) -->
+LINK | [Workout Tracker demo](https://drive.google.com/file/d/1JexrrdKI0UNX8lTOkF5iQlBZVF_y31eR/view)
+
+View Homepage and add exercise to workout
+
+![Workout Tracker Add Exercise to Workout.](/public/images/Workout-Tracker-Homepage-Add-Exercise-Demo.gif)
+
+View data on Homepage and verify that it is populating the Dashboard
+
+![Workout Tracker Dashboard Populating.](/public/images/Workout-Tracker-Dashboard-Demo.gif)
 
 ## MIT License
 
