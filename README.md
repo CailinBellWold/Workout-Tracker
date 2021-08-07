@@ -35,42 +35,30 @@ This exercise provided opportunities to test my budding skills with Mongo and Mo
 7. The app is deployed to Heroku.
 
 ## Technologies Used 
+- Heroku
 - JavaScript
 - Mongo
-- Mongoose
-- Heroku
 - [MongoDB Atlas] (https://www.mongodb.com/cloud/atlas)
+- Mongoose
+- Node.js
 - [NPM Express.js Package](https://www.npmjs.com/package/express)
 - [NPM Express-Session Package](https://www.npmjs.com/package/express-session)
 - [NPM dotenv Package](https://www.npmjs.com/package/dotenv)
 - [NPM nodemon Package](https://www.npmjs.com/package/nodemon)
 
-<!-- - Node.js
-
-- [NPM Handlebars.js Package](https://www.npmjs.com/package/handlebars)
-- [NPM Sequelize ORM Package](https://www.npmjs.com/package/sequelize)
-- [NPM Cookies Package](https://www.npmjs.com/package/cookies)
-- [NPM bcrypt Package](https://www.npmjs.com/package/bcrypt)
-- [NPM Router Package](https://www.npmjs.com/package/router)
-
-
-- [NPM connect-session-sequelize Package](https://www.npmjs.com/package/connect-session-sequelize?activeTab=versions) -->
-
-<!-- - [NPM TestCafe Package](https://www.npmjs.com/package/testcafe) -->
-
 ## Local Installation & Usage
 
-<!-- To use this app, you will need a MySQL Workbench account, and to have the app installed on your machine. Documentation with installation instructions are available [here.](https://dev.mysql.com/doc/workbench/en/wb-installing.html) 
+To use this app, you will need a Mongo account, and to have the app installed on your machine. Documentation with installation instructions are available [here.](https://dev.mysql.com/doc/workbench/en/wb-installing.html) 
 
 STEP 1
 
-    1.1 Clone this Tech-Blog repo to your machine.
+    1.1 Clone this Workout-Tracker repo to your machine.
 
 STEP 2
 
 From Visual Studio Code or the code editor of your choice:
 
-    2.1 Open the repo.  
+    2.1 Open the repo.
     2.2 Locate and open the .env.EXAMPLE file, located in the root directory.
     2.3 Add your own MySQL Workbench Username and Password to the env.EXAMPLE file.
     2.4 Re-name the file to .env (i.e. remove .EXAMPLE).
@@ -89,7 +77,7 @@ STEP 4
 
 From the modern browser of your choice, visit:
 
-    4.1 http://localhost:3001 -->
+    4.1 http://localhost:3001
 
 ## Deployed App
 
